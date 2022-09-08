@@ -1,0 +1,27 @@
+---
+title: Tabs
+layout: "base.njk"
+---
+
+<nav>
+  <div class="nav nav-tabs" id="nav-tab" role="tablist">
+    <button class="nav-link ga4-event" id="nav-one-tab" data-bs-toggle="tab" data-bs-target="#nav-one" type="button" role="tab" aria-controls="nav-one" aria-selected="true" data-ga4='{"element":"tab", "action":"select", "info":"nav-tab", "text":"One"}'>One</button>
+    <button class="nav-link ga4-event" id="nav-two-tab" data-bs-toggle="tab" data-bs-target="#nav-two" type="button" role="tab" aria-controls="nav-two" aria-selected="false" data-ga4='{"element":"tab", "action":"select", "info":"nav-tab", "text":"Two"}'>Two</button>
+    <button class="nav-link ga4-event" id="nav-three-tab" data-bs-toggle="tab" data-bs-target="#nav-three" type="button" role="tab" aria-controls="nav-three" aria-selected="false" data-ga4='{"element":"tab", "action":"select", "info":"nav-tab", "text":"Three"}'>Three</button>
+  </div>
+</nav>
+
+<div class="tab-content" id="nav-tabContent">
+  <div class="tab-pane fade show" id="nav-one" role="tabpanel" aria-labelledby="nav-one-tab" tabindex="0">
+    {% include "_lorem.html" %}
+  </div>
+  <div class="tab-pane fade" id="nav-two" role="tabpanel" aria-labelledby="nav-two-tab" tabindex="0">
+    {% include "_lorem.html" %}
+    {% include "_lorem.html" %}
+  </div>
+  <div class="tab-pane fade" id="nav-three" role="tabpanel" aria-labelledby="nav-three-tab" tabindex="0">
+    {% include "_lorem.html" %}
+    {% include "_lorem.html" %}
+    {% include "_lorem.html" %}
+  </div>
+</div>
